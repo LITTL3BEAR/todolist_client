@@ -1,0 +1,11 @@
+<!-- <router-outlet></router-outlet> -->
+
+<div>
+  <div>
+    <button (click)="getTodos()" type="button" class="btn btn-primary">TodoList</button>
+  </div>
+  <div *ngFor="let data of datas">
+    <p>Name : {{data.name}}</p>
+    <p>Description : {{data.description}}</p>
+  </div>
+</div>
